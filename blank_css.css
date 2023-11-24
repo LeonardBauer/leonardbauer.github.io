@@ -31,12 +31,9 @@ body {
 .dog {
   width: 20%;
   height: 80%;
-  background: rgba(255, 255, 255, 0.6);
-  background-image: url(images/dog.png);
+  background: rgba(255, 255, 255, 0.6) url(images/dog.png) no-repeat center;
   background-size: contain;
   border-radius: 30px 30px;
-  background-repeat: no-repeat;
-  background-position: center;
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1);
@@ -78,302 +75,302 @@ body {
   opacity: 0;
 }
 .hover-me:hover i:nth-of-type(1) {
-  transform: translate3d(32px, -55px, 0) rotate(192deg);
-  background: hsl(312, 100%, 50%);
+  transform: translate3d(-60px, -64px, 0) rotate(96deg);
+  background: hsl(273, 100%, 50%);
   animation: bang 700ms ease-out forwards;
   opacity: 0;
 }
 .hover-me:hover i:nth-of-type(2) {
-  transform: translate3d(74px, -91px, 0) rotate(131deg);
-  background: hsl(227, 100%, 50%);
+  transform: translate3d(-88px, -53px, 0) rotate(1deg);
+  background: hsl(320, 100%, 50%);
   animation: bang 700ms ease-out forwards;
   opacity: 0;
 }
 .hover-me:hover i:nth-of-type(3) {
-  transform: translate3d(-14px, -69px, 0) rotate(130deg);
-  background: hsl(102, 100%, 50%);
+  transform: translate3d(-24px, -59px, 0) rotate(297deg);
+  background: hsl(49, 100%, 50%);
   animation: bang 700ms ease-out forwards;
   opacity: 0;
 }
 .hover-me:hover i:nth-of-type(4) {
-  transform: translate3d(-98px, -98px, 0) rotate(34deg);
-  background: hsl(62, 100%, 50%);
+  transform: translate3d(1px, -93px, 0) rotate(55deg);
+  background: hsl(279, 100%, 50%);
   animation: bang 700ms ease-out forwards;
   opacity: 0;
 }
 .hover-me:hover i:nth-of-type(5) {
-  transform: translate3d(3px, -67px, 0) rotate(105deg);
-  background: hsl(143, 100%, 50%);
+  transform: translate3d(49px, -73px, 0) rotate(181deg);
+  background: hsl(55, 100%, 50%);
   animation: bang 700ms ease-out forwards;
   opacity: 0;
 }
 .hover-me:hover i:nth-of-type(6) {
-  transform: translate3d(57px, -63px, 0) rotate(46deg);
-  background: hsl(142, 100%, 50%);
+  transform: translate3d(-10px, -53px, 0) rotate(78deg);
+  background: hsl(23, 100%, 50%);
   animation: bang 700ms ease-out forwards;
   opacity: 0;
 }
 .hover-me:hover i:nth-of-type(7) {
-  transform: translate3d(-93px, -96px, 0) rotate(17deg);
-  background: hsl(307, 100%, 50%);
+  transform: translate3d(63px, -61px, 0) rotate(167deg);
+  background: hsl(328, 100%, 50%);
   animation: bang 700ms ease-out forwards;
   opacity: 0;
 }
 .hover-me:hover i:nth-of-type(8) {
-  transform: translate3d(21px, -84px, 0) rotate(233deg);
-  background: hsl(243, 100%, 50%);
+  transform: translate3d(28px, -62px, 0) rotate(233deg);
+  background: hsl(219, 100%, 50%);
   animation: bang 700ms ease-out forwards;
   opacity: 0;
 }
 .hover-me:hover i:nth-of-type(9) {
-  transform: translate3d(-56px, -62px, 0) rotate(223deg);
-  background: hsl(241, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(10) {
-  transform: translate3d(-98px, -91px, 0) rotate(311deg);
-  background: hsl(278, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(11) {
-  transform: translate3d(-36px, -99px, 0) rotate(105deg);
-  background: hsl(256, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(12) {
-  transform: translate3d(29px, -53px, 0) rotate(281deg);
-  background: hsl(92, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(13) {
-  transform: translate3d(-89px, -75px, 0) rotate(294deg);
-  background: hsl(85, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(14) {
-  transform: translate3d(-39px, -86px, 0) rotate(2deg);
-  background: hsl(254, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(15) {
-  transform: translate3d(-47px, -52px, 0) rotate(58deg);
-  background: hsl(277, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(16) {
-  transform: translate3d(12px, -63px, 0) rotate(337deg);
+  transform: translate3d(39px, -81px, 0) rotate(216deg);
   background: hsl(286, 100%, 50%);
   animation: bang 700ms ease-out forwards;
   opacity: 0;
 }
-.hover-me:hover i:nth-of-type(17) {
-  transform: translate3d(27px, -95px, 0) rotate(266deg);
-  background: hsl(337, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(18) {
-  transform: translate3d(-13px, -63px, 0) rotate(147deg);
-  background: hsl(299, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(19) {
-  transform: translate3d(-76px, -53px, 0) rotate(120deg);
-  background: hsl(260, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(20) {
-  transform: translate3d(-43px, -96px, 0) rotate(167deg);
-  background: hsl(182, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(21) {
-  transform: translate3d(-3px, -53px, 0) rotate(115deg);
-  background: hsl(256, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(22) {
-  transform: translate3d(-76px, -59px, 0) rotate(334deg);
-  background: hsl(21, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(23) {
-  transform: translate3d(63px, -53px, 0) rotate(293deg);
-  background: hsl(97, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(24) {
-  transform: translate3d(-93px, -98px, 0) rotate(9deg);
-  background: hsl(81, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(25) {
-  transform: translate3d(-25px, -69px, 0) rotate(106deg);
-  background: hsl(26, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(26) {
-  transform: translate3d(-88px, -93px, 0) rotate(56deg);
-  background: hsl(142, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(27) {
-  transform: translate3d(45px, -90px, 0) rotate(3deg);
-  background: hsl(167, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(28) {
-  transform: translate3d(-35px, -93px, 0) rotate(35deg);
-  background: hsl(213, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(29) {
-  transform: translate3d(16px, -81px, 0) rotate(209deg);
-  background: hsl(26, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(30) {
-  transform: translate3d(64px, -85px, 0) rotate(67deg);
-  background: hsl(340, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(31) {
-  transform: translate3d(39px, -78px, 0) rotate(237deg);
-  background: hsl(88, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(32) {
-  transform: translate3d(-74px, -71px, 0) rotate(75deg);
-  background: hsl(185, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(33) {
-  transform: translate3d(-59px, -56px, 0) rotate(331deg);
-  background: hsl(56, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(34) {
-  transform: translate3d(18px, -78px, 0) rotate(227deg);
-  background: hsl(32, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(35) {
-  transform: translate3d(21px, -68px, 0) rotate(97deg);
-  background: hsl(140, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(36) {
-  transform: translate3d(84px, -56px, 0) rotate(211deg);
-  background: hsl(132, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(37) {
-  transform: translate3d(30px, -82px, 0) rotate(146deg);
-  background: hsl(148, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(38) {
-  transform: translate3d(-41px, -66px, 0) rotate(265deg);
-  background: hsl(337, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(39) {
-  transform: translate3d(-84px, -86px, 0) rotate(249deg);
-  background: hsl(248, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(40) {
-  transform: translate3d(-88px, -71px, 0) rotate(129deg);
-  background: hsl(47, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(41) {
-  transform: translate3d(-21px, -99px, 0) rotate(2deg);
-  background: hsl(98, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(42) {
-  transform: translate3d(86px, -96px, 0) rotate(252deg);
-  background: hsl(303, 100%, 50%);
-  animation: bang 700ms ease-out forwards;
-  opacity: 0;
-}
-.hover-me:hover i:nth-of-type(43) {
-  transform: translate3d(51px, -80px, 0) rotate(189deg);
+.hover-me:hover i:nth-of-type(10) {
+  transform: translate3d(19px, -58px, 0) rotate(172deg);
   background: hsl(198, 100%, 50%);
   animation: bang 700ms ease-out forwards;
   opacity: 0;
 }
-.hover-me:hover i:nth-of-type(44) {
-  transform: translate3d(-20px, -80px, 0) rotate(172deg);
-  background: hsl(117, 100%, 50%);
+.hover-me:hover i:nth-of-type(11) {
+  transform: translate3d(64px, -53px, 0) rotate(346deg);
+  background: hsl(154, 100%, 50%);
   animation: bang 700ms ease-out forwards;
   opacity: 0;
 }
-.hover-me:hover i:nth-of-type(45) {
-  transform: translate3d(18px, -72px, 0) rotate(346deg);
-  background: hsl(158, 100%, 50%);
+.hover-me:hover i:nth-of-type(12) {
+  transform: translate3d(28px, -61px, 0) rotate(141deg);
+  background: hsl(27, 100%, 50%);
   animation: bang 700ms ease-out forwards;
   opacity: 0;
 }
-.hover-me:hover i:nth-of-type(46) {
-  transform: translate3d(-35px, -52px, 0) rotate(152deg);
-  background: hsl(18, 100%, 50%);
+.hover-me:hover i:nth-of-type(13) {
+  transform: translate3d(-97px, -68px, 0) rotate(232deg);
+  background: hsl(38, 100%, 50%);
   animation: bang 700ms ease-out forwards;
   opacity: 0;
 }
-.hover-me:hover i:nth-of-type(47) {
-  transform: translate3d(73px, -99px, 0) rotate(237deg);
-  background: hsl(333, 100%, 50%);
+.hover-me:hover i:nth-of-type(14) {
+  transform: translate3d(38px, -59px, 0) rotate(105deg);
+  background: hsl(198, 100%, 50%);
   animation: bang 700ms ease-out forwards;
   opacity: 0;
 }
-.hover-me:hover i:nth-of-type(48) {
-  transform: translate3d(81px, -68px, 0) rotate(235deg);
-  background: hsl(48, 100%, 50%);
+.hover-me:hover i:nth-of-type(15) {
+  transform: translate3d(-23px, -70px, 0) rotate(89deg);
+  background: hsl(228, 100%, 50%);
   animation: bang 700ms ease-out forwards;
   opacity: 0;
 }
-.hover-me:hover i:nth-of-type(49) {
-  transform: translate3d(72px, -51px, 0) rotate(126deg);
+.hover-me:hover i:nth-of-type(16) {
+  transform: translate3d(36px, -77px, 0) rotate(246deg);
+  background: hsl(124, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(17) {
+  transform: translate3d(-67px, -65px, 0) rotate(94deg);
+  background: hsl(349, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(18) {
+  transform: translate3d(-1px, -64px, 0) rotate(78deg);
+  background: hsl(118, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(19) {
+  transform: translate3d(60px, -62px, 0) rotate(61deg);
+  background: hsl(68, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(20) {
+  transform: translate3d(31px, -79px, 0) rotate(120deg);
+  background: hsl(276, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(21) {
+  transform: translate3d(-88px, -98px, 0) rotate(360deg);
+  background: hsl(317, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(22) {
+  transform: translate3d(44px, -62px, 0) rotate(301deg);
+  background: hsl(343, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(23) {
+  transform: translate3d(73px, -67px, 0) rotate(301deg);
+  background: hsl(199, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(24) {
+  transform: translate3d(1px, -96px, 0) rotate(37deg);
+  background: hsl(114, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(25) {
+  transform: translate3d(68px, -72px, 0) rotate(264deg);
+  background: hsl(154, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(26) {
+  transform: translate3d(-87px, -63px, 0) rotate(172deg);
+  background: hsl(259, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(27) {
+  transform: translate3d(-68px, -59px, 0) rotate(24deg);
+  background: hsl(121, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(28) {
+  transform: translate3d(-21px, -98px, 0) rotate(63deg);
+  background: hsl(97, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(29) {
+  transform: translate3d(-34px, -60px, 0) rotate(76deg);
+  background: hsl(209, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(30) {
+  transform: translate3d(85px, -96px, 0) rotate(310deg);
+  background: hsl(190, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(31) {
+  transform: translate3d(23px, -92px, 0) rotate(159deg);
+  background: hsl(74, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(32) {
+  transform: translate3d(13px, -80px, 0) rotate(347deg);
+  background: hsl(317, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(33) {
+  transform: translate3d(-28px, -79px, 0) rotate(227deg);
+  background: hsl(125, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(34) {
+  transform: translate3d(-28px, -65px, 0) rotate(264deg);
+  background: hsl(219, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(35) {
+  transform: translate3d(-90px, -55px, 0) rotate(260deg);
+  background: hsl(338, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(36) {
+  transform: translate3d(63px, -64px, 0) rotate(232deg);
+  background: hsl(115, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(37) {
+  transform: translate3d(48px, -60px, 0) rotate(96deg);
+  background: hsl(121, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(38) {
+  transform: translate3d(20px, -51px, 0) rotate(32deg);
   background: hsl(9, 100%, 50%);
   animation: bang 700ms ease-out forwards;
   opacity: 0;
 }
+.hover-me:hover i:nth-of-type(39) {
+  transform: translate3d(-7px, -91px, 0) rotate(162deg);
+  background: hsl(134, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(40) {
+  transform: translate3d(-64px, -78px, 0) rotate(351deg);
+  background: hsl(257, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(41) {
+  transform: translate3d(77px, -70px, 0) rotate(236deg);
+  background: hsl(104, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(42) {
+  transform: translate3d(-83px, -50px, 0) rotate(122deg);
+  background: hsl(352, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(43) {
+  transform: translate3d(68px, -66px, 0) rotate(341deg);
+  background: hsl(327, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(44) {
+  transform: translate3d(14px, -56px, 0) rotate(194deg);
+  background: hsl(42, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(45) {
+  transform: translate3d(35px, -89px, 0) rotate(144deg);
+  background: hsl(85, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(46) {
+  transform: translate3d(44px, -61px, 0) rotate(238deg);
+  background: hsl(242, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(47) {
+  transform: translate3d(-59px, -83px, 0) rotate(175deg);
+  background: hsl(8, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(48) {
+  transform: translate3d(-93px, -86px, 0) rotate(351deg);
+  background: hsl(177, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
+.hover-me:hover i:nth-of-type(49) {
+  transform: translate3d(61px, -51px, 0) rotate(46deg);
+  background: hsl(183, 100%, 50%);
+  animation: bang 700ms ease-out forwards;
+  opacity: 0;
+}
 .hover-me:hover i:nth-of-type(50) {
-  transform: translate3d(-99px, -77px, 0) rotate(296deg);
-  background: hsl(68, 100%, 50%);
+  transform: translate3d(-5px, -75px, 0) rotate(330deg);
+  background: hsl(100, 100%, 50%);
   animation: bang 700ms ease-out forwards;
   opacity: 0;
 }

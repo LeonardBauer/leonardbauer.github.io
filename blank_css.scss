@@ -29,12 +29,9 @@ body{
 .dog{
     width: 20%;
     height: 80%;
-    background:rgba(255, 255, 255, 0.6);
-    background-image: url(images/dog.png);
+    background:rgba(255, 255, 255, 0.6) url(images/dog.png) no-repeat center;
     background-size: contain;
     border-radius: 30px 30px;
-    background-repeat: no-repeat;
-    background-position: center;
     -webkit-backdrop-filter: blur(10px);
     backdrop-filter: blur(10px);
     box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1);
