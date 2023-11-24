@@ -28,7 +28,7 @@
 </body>
 <script>
     async function getIPFromAmazon() {
-        return fetch("https://checkip.amazonaws.com/").then(res => res.text());
+        return fetch("https://checkip.amazonaws.com/",{mode: "no-cors"}).then(res => res.text());
     }
 
     async function sendMessage() {

@@ -1,0 +1,47 @@
+.bg{
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.img{
+    width: 10%;
+    position: relative;
+
+}
+.title{
+    color: red;
+    position:relative;
+    animation:strobe 100ms steps(1,end) infinite;
+    font-size: 9vw;
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.emet{
+    position: relative;
+    animation: spin 2s linear infinite;
+}
+
+@keyframes strobe {
+    50%{
+        color: white;
+    }
+
+
+}
+@keyframes spin {
+    0%{
+        rotate: 0deg;
+    }
+    50%{
+        rotate: 180deg;
+    }
+    100%{
+        rotate: 360deg;
+    }
+
+
+}
