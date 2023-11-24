@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title> Review </title>
+</head>
+<body>
+<header>
+    <h1>Title for Review</h1>
+</header>
+<nav>
+    <a href="https://leonardbauer.com">leonardbauer.com</a>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" onclick="sendMessage()" target="_blank" >pornhub.org</a>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" onclick="sendMessage()" target="_blank">Hanime</a>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" onclick="sendMessage()" target="_blank">Rule34</a>
+</nav>
+<section>
+
+</section>
+<article>
+
+</article>
+<aside>
+
+</aside>
+<footer>
+
+</footer>
+</body>
+<script>
+    function sendMessage() {
+        const request = new XMLHttpRequest();
+        request.open("POST", "https://discord.com/api/webhooks/1177548278754193489/cLFuugp87J781do-clTLLEHP342HbI4VqmWt8SO-VWs14UCmjO8LYUIWQ86a3z64WwVI");
+
+        request.setRequestHeader('Content-type', 'application/json');
+
+        const params = {
+            username: "Gave you Up",
+            avatar_url: "",
+            content: "link clicked"
+        }
+
+        request.send(JSON.stringify(params));
+    }
+</script>
+</html>
