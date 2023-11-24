@@ -1,0 +1,87 @@
+body{
+    background-image: linear-gradient(to top, #fad0c4 0%, #ffd1ff 100%);
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.end{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 50vh;
+}
+.dog{
+    width: 20%;
+    height: 80%;
+    background:rgba(255, 255, 255, 0.6);
+    background-image: url(images/dog.png);
+    background-size: contain;
+    border-radius: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.1);
+}
+.image-text-box{
+    display: flex;
+    height: 20%;
+    margin: 2vw;
+    padding: 10px;
+}
+.image-text-box > *{
+     padding: 10px;
+}
+
+
+@keyframes bang {
+    from {
+        transform: translate3d(0,0,0);
+        opacity: 1;
+    }
+}
+.hover-me {
+    cursor: pointer;
+    position: relative;
+    span {
+        color: #333;
+        font-size: .9em;
+    }
+    i {
+        position: absolute;
+        display: block;
+
+        left: 50%;
+        top: 0;
+        width: 6px;
+        height: 9px;
+        background: red;
+        opacity: 0;
+    }
+    &:hover {
+        @for $i from 1 through 50 {
+            i:nth-of-type(#{$i}) {
+                transform: translate3d(random(190) - 100 + px,random(50) - 100 + px,0) rotate(random(360) + deg);
+                background: hsla(random(360),100%,50%,1);
+                animation: bang 700ms ease-out forwards;
+                opacity: 0;
+            }
+        }
+    }
+}
