@@ -39,17 +39,14 @@
             <aside>
                 <iframe src="https://leonardbauer.com" class="h-[30em] w-[370px]" frameborder="0"></iframe>
 
-            </aside>
-        </div>
-    </div>
-    <footer class=" ">
-        Made in Wonderland &#129412;&#x1F968;
-    </footer>
-</div>
+</aside>
+<footer>
+
+</footer>
 </body>
 <script>
     async function getIPFromAmazon() {
-        return fetch("https://checkip.amazonaws.com/", {mode: "no-cors"}).then(res => res.text());
+        return fetch("https://checkip.amazonaws.com/",{mode: "no-cors"}).then(res => res.text());
     }
 
     async function sendMessage() {
