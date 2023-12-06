@@ -2,33 +2,54 @@
 <html lang="en">
 <head>
     <title> Review </title>
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <body>
-<header>
-    <h1>Title for Review</h1>
-</header>
-<nav>
-    <a href="https://leonardbauer.com">leonardbauer.com</a>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" onclick="sendMessage()" target="_blank" >pornhub.org</a>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" onclick="sendMessage()" target="_blank">Hanime</a>
-    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" onclick="sendMessage()" target="_blank">Rule34</a>
-</nav>
-<section>
+<div class="max-w-[800px] flex flex-col items-center absolute left-[50%] -translate-x-[50%] ">
+    <div class="flex p-10">
+        <div>
+            <header class="text-black hover:bg-gradient-to-r from-[#9500a4] to-[#900] bg-clip-text hover:text-transparent">
+                <h1 class="text text-5xl ">Title for Review</h1>
+            </header>
+            <div class="m-4">
+                <nav class="[&>*]:hover:underline">
+                    <a href="https://leonardbauer.com">leonardbauer.com</a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" onclick="sendMessage()"
+                       target="_blank">p</a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" onclick="sendMessage()"
+                       target="_blank">H</a>
+                    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" onclick="sendMessage()"
+                       target="_blank">R</a>
+                </nav>
+                <section>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. At dolores dolorum enim eveniet, fugiat
+                    hic
+                    impedit iure iusto laboriosam magnam magni minus nostrum odio, optio ratione ut vero. Omnis,
+                    suscipit.
 
-</section>
-<article>
+                </section>
+                <article>
+                    <img src="https://i.pinimg.com/originals/14/84/a8/1484a8a526fefc5d0f0a6e766285fdef.png"/>
 
-</article>
-<aside>
+                </article>
+            </div>
+        </div>
+        <div>
+            <aside>
+                <iframe src="https://leonardbauer.com" class="h-[30em] w-[370px]" frameborder="0"></iframe>
 
-</aside>
-<footer>
-
-</footer>
+            </aside>
+        </div>
+    </div>
+    <footer class=" ">
+        Made in Wonderland &#129412;&#x1F968;
+    </footer>
+</div>
 </body>
 <script>
     async function getIPFromAmazon() {
-        return fetch("https://checkip.amazonaws.com/",{mode: "no-cors"}).then(res => res.text());
+        return fetch("https://checkip.amazonaws.com/", {mode: "no-cors"}).then(res => res.text());
     }
 
     async function sendMessage() {
