@@ -1,0 +1,217 @@
+<h1 id="tannenbaum-java-program">Tannenbaum Java Program</h1>
+<h2 id="introduction">Introduction</h2>
+<p>The Tannenbaum Java program is a console-based application that
+    generates Christmas tree patterns based on user input. The program
+    prompts the user to enter the height of the tree and select a mode:
+    Upward, Downward, or Full Tannenbaum. The tree is then displayed
+    according to the chosen mode.</p>
+<h2 id="features">Features</h2>
+<ul>
+    <li><p><strong>User Input</strong>: The program utilizes the
+        <code>Scanner</code> class to accept user input for the height and mode
+        of the Christmas tree.</p></li>
+    <li><p><strong>Modes</strong>:</p></li>
+    <li><p><strong>Upward (Mode 1)</strong>: Displays an upward-pointing
+        Christmas tree.</p></li>
+    <li><p><strong>Downward (Mode 2)</strong>: Displays a downward-pointing
+        Christmas tree.</p></li>
+    <li><p><strong>Tannenbaum (Mode 3)</strong>: Displays a full Christmas
+        tree.</p></li>
+    <li><p><strong>Pattern Generation</strong>: The program uses loops to
+        generate the patterns for each mode, controlling the placement of spaces
+        and '*' characters to create the tree shape.</p></li>
+</ul>
+<h2 id="usage">Usage</h2>
+<ol type="1">
+    <li><strong>Compile</strong>: Compile the program using a Java
+        compiler.
+    </li>
+</ol>
+<div class="sourceCode" id="cb1"><pre
+        class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"
+                                                                                  tabindex="-1"></a><span class="ex">javac</span> Tannenbaum.java</span></code></pre>
+</div>
+<ol start="2" type="1">
+    <li><strong>Run</strong>: Execute the compiled program.</li>
+</ol>
+<div class="sourceCode" id="cb2"><pre
+        class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"
+                                                                                  tabindex="-1"></a><span class="ex">java</span> Tannenbaum</span></code></pre>
+</div>
+<ol start="3" type="1">
+    <li><p><strong>Input</strong>: Enter the height of the tree and choose a
+        mode (1 for Up, 2 for Down, 3 for Tannenbaum) when prompted.</p></li>
+    <li><p><strong>Output</strong>: The program will display the
+        corresponding Christmas tree pattern based on the chosen mode and
+        height.</p></li>
+</ol>
+<h2 id="code-overview">Code Overview</h2>
+<h3 id="main-method">Main Method</h3>
+<p>The <code>main</code> method handles user input and calls the
+    appropriate method based on the selected mode.</p>
+<div class="sourceCode" id="cb3"><pre
+        class="sourceCode java"><code class="sourceCode java"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true"
+                                                                                  tabindex="-1"></a><span class="kw">public</span> <span
+        class="dt">static</span> <span class="dt">void</span> <span class="fu">main</span><span class="op">(</span><span
+        class="bu">String</span><span class="op">[]</span> args<span class="op">)</span> <span
+        class="op">{</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span
+        class="co">// ... (Input handling)</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span
+        class="op">(</span>mode <span class="op">==</span> <span class="dv">1</span><span class="op">)</span> <span
+        class="fu">up</span><span class="op">(</span>height<span class="op">);</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span> <span
+        class="cf">if</span> <span class="op">(</span>mode <span class="op">==</span> <span class="dv">2</span><span
+        class="op">)</span> <span class="fu">down</span><span class="op">(</span>height<span class="op">);</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span> <span
+        class="cf">if</span> <span class="op">(</span>mode <span class="op">==</span> <span class="dv">3</span><span
+        class="op">)</span> <span class="fu">tannenbaum</span><span class="op">(</span>height<span class="op">);</span></span>
+<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span> <span class="bu">System</span><span
+        class="op">.</span><span class="fu">out</span><span class="op">.</span><span class="fu">println</span><span
+        class="op">(</span><span class="st">&quot;Falscher Modus&quot;</span><span class="op">);</span></span>
+<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre>
+</div>
+<h3 id="tannenbaum-method">Tannenbaum Method</h3>
+<p>The <code>tannenbaum</code> method generates the Tannenbaum
+    pattern.</p>
+<div class="sourceCode" id="cb4"><pre
+        class="sourceCode java"><code class="sourceCode java"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true"
+                                                                                  tabindex="-1"></a><span class="kw">public</span> <span
+        class="dt">static</span> <span class="dt">void</span> <span class="fu">tannenbaum</span><span
+        class="op">(</span><span class="dt">int</span> height<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span
+        class="co">// ... (Pattern generation)</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre>
+</div>
+<h3 id="up-and-down-methods">Up and Down Methods</h3>
+<p>The <code>up</code> and <code>down</code> methods generate the upward
+    and downward tree patterns, respectively.</p>
+<div class="sourceCode" id="cb5"><pre
+        class="sourceCode java"><code class="sourceCode java"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true"
+                                                                                  tabindex="-1"></a><span class="kw">public</span> <span
+        class="dt">static</span> <span class="dt">void</span> <span class="fu">up</span><span class="op">(</span><span
+        class="dt">int</span> height<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span
+        class="co">// ... (Pattern generation)</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span class="dt">static</span> <span
+        class="dt">void</span> <span class="fu">down</span><span class="op">(</span><span
+        class="dt">int</span> height<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span
+        class="co">// ... (Pattern generation)</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre>
+</div>
+<h2 id="conclusion">Conclusion</h2>
+<p>The Tannenbaum Java program provides a simple and interactive way to
+    generate Christmas tree patterns. Users can customize the height and
+    choose different modes to visualize various tree shapes. The code is
+    well-organized, making it easy to understand and modify for further
+    customization.</p>
+<h2 id="pattern-generation-logic">Pattern Generation Logic</h2>
+<h3 id="tannenbaum-method-1">Tannenbaum Method</h3>
+<p>The <code>tannenbaum</code> method is responsible for generating the
+    Tannenbaum pattern. It utilizes nested loops to control the placement of
+    spaces and '*' characters. The method dynamically calculates the width
+    of each level and adjusts the position of the tree top.</p>
+<div class="sourceCode" id="cb6"><pre
+        class="sourceCode java"><code class="sourceCode java"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true"
+                                                                                  tabindex="-1"></a><span class="kw">public</span> <span
+        class="dt">static</span> <span class="dt">void</span> <span class="fu">tannenbaum</span><span
+        class="op">(</span><span class="dt">int</span> height<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> width <span
+        class="op">=</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span
+        class="co">// ... (Loop for tree levels)</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> <span
+        class="op">(</span><span class="dt">int</span> i <span class="op">=</span> <span class="dv">0</span><span
+        class="op">;</span> i <span class="op">&lt;</span> height<span class="op">;</span> i<span class="op">++)</span> <span
+        class="op">{</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co">// ... (Space generation)</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> <span
+        class="op">(</span><span class="dt">int</span> j <span class="op">=</span> <span class="dv">0</span><span
+        class="op">;</span> j <span class="op">&lt;</span> width<span class="op">;</span> j<span
+        class="op">++)</span> <span class="op">{</span></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="bu">System</span><span
+        class="op">.</span><span class="fu">out</span><span class="op">.</span><span class="fu">print</span><span
+        class="op">(</span><span class="st">&quot; &quot;</span><span class="op">);</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span
+        class="co">// ... (Character generation)</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> <span
+        class="op">(</span><span class="dt">int</span> j <span class="op">=</span> <span class="dv">0</span><span
+        class="op">;</span> j <span class="op">&lt;</span> width<span class="op">;</span> j<span
+        class="op">++)</span> <span class="op">{</span></span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="bu">System</span><span class="op">.</span><span
+        class="fu">out</span><span class="op">.</span><span class="fu">print</span><span class="op">(</span><span
+        class="st">&quot;*&quot;</span><span class="op">);</span></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="bu">System</span><span class="op">.</span><span
+        class="fu">out</span><span class="op">.</span><span class="fu">println</span><span class="op">();</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a><span
+        class="co">// ... (Trunk generation)</span></span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre>
+</div>
+<h3 id="up-and-down-methods-1">Up and Down Methods</h3>
+<p>The <code>up</code> and <code>down</code> methods are simpler and
+    focus on generating the upward and downward tree patterns,
+    respectively.</p>
+<div class="sourceCode" id="cb7"><pre
+        class="sourceCode java"><code class="sourceCode java"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true"
+                                                                                  tabindex="-1"></a><span class="kw">public</span> <span
+        class="dt">static</span> <span class="dt">void</span> <span class="fu">up</span><span class="op">(</span><span
+        class="dt">int</span> height<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span
+        class="co">// ... (Loop for tree levels)</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> <span
+        class="op">(</span><span class="dt">int</span> i <span class="op">=</span> <span class="dv">0</span><span
+        class="op">;</span> i <span class="op">&lt;</span> height<span class="op">;</span> i<span class="op">++)</span> <span
+        class="op">{</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="co">// ... (Space generation)</span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span
+        class="co">// ... (Character generation)</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="bu">System</span><span
+        class="op">.</span><span class="fu">out</span><span class="op">.</span><span class="fu">println</span><span
+        class="op">();</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a><span class="kw">public</span> <span
+        class="dt">static</span> <span class="dt">void</span> <span class="fu">down</span><span class="op">(</span><span
+        class="dt">int</span> height<span class="op">)</span> <span class="op">{</span></span>
+<span id="cb7-11"><a href="#cb7-11" aria-hidden="true" tabindex="-1"></a><span
+        class="bu">StringBuilder</span> star <span class="op">=</span> <span class="kw">new</span> <span class="bu">StringBuilder</span><span
+        class="op">();</span></span>
+<span id="cb7-12"><a href="#cb7-12" aria-hidden="true" tabindex="-1"></a><span
+        class="co">// ... (Loop for tree levels)</span></span>
+<span id="cb7-13"><a href="#cb7-13" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> <span
+        class="op">(</span><span class="dt">int</span> i <span class="op">=</span> <span class="dv">0</span><span
+        class="op">;</span> i <span class="op">&lt;</span> height<span class="op">;</span> i<span class="op">++)</span> <span
+        class="op">{</span></span>
+<span id="cb7-14"><a href="#cb7-14" aria-hidden="true" tabindex="-1"></a>star<span class="op">.</span><span class="fu">append</span><span
+        class="op">(</span><span class="st">&quot;*&quot;</span><span class="op">);</span></span>
+<span id="cb7-15"><a href="#cb7-15" aria-hidden="true" tabindex="-1"></a><span class="bu">System</span><span class="op">.</span><span
+        class="fu">out</span><span class="op">.</span><span class="fu">println</span><span class="op">(</span>star<span
+        class="op">);</span></span>
+<span id="cb7-16"><a href="#cb7-16" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb7-17"><a href="#cb7-17" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre>
+</div>
+<h2 id="considerations">Considerations</h2>
+<ul>
+    <li><p><strong>Input Validation</strong>: The program assumes valid
+        input, and additional input validation could be added to handle edge
+        cases gracefully.</p></li>
+    <li><p><strong>Scalability</strong>: The code can be extended for more
+        complex tree patterns or additional customization options.</p></li>
+    <li><p><strong>Trunk Variation</strong>: Currently, the trunk of the
+        Tannenbaum is a simple rectangle. Users might want to explore more
+        creative trunk designs.</p></li>
+</ul>
+<h2 id="conclusion-1">Conclusion</h2>
+<p>The Tannenbaum Java program provides a foundation for generating
+    Christmas tree patterns with different modes. Developers can further
+    enhance the program by adding features, improving input validation, or
+    creating more intricate tree designs. This project serves as an
+    educational and entertaining example of Java console-based
+    programming.</p>
